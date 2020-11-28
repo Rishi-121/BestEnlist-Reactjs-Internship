@@ -1,15 +1,17 @@
 // Task 2
 
-// Math.floor(Math.random() * (Max - Min) + Min)
+function generateRandomNumber() {
+  var randomNum = Math.floor(Math.random() * 1000000 + 99999);
+  if (randomNum > 1000000) {
+    randomNum = Math.floor(Math.random() * 1000000 + 99999);
+  }
+  return randomNum;
+}
 
-var randomNum = Math.floor(Math.random() * (1000000 - 100000) + 100000);
+console.log(generateRandomNumber());
 
-console.log(randomNum);
+// 886931
 
-// 923480
+// 597056
 
-// 405412
-
-// 292551
-
-// 508866
+// 323132
