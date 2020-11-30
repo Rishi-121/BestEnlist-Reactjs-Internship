@@ -16,5 +16,5 @@ function checkRepeatedNumbers(v) {
     return true;
   }
 }
-var value = 2344;
+var value = Number(prompt());
 console.log(checkRepeatedNumbers(value));
