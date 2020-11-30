@@ -1,12 +1,7 @@
-// jshint esversion:6
-
 // Task 1
 
 function checkRepeatedNumbers(v) {
-  const lastTwoDigits = +String(v).slice(
-    String(v).length - 2,
-    String(v).length
-  );
+  var lastTwoDigits = +String(v).slice(String(v).length - 2, String(v).length);
   if (lastTwoDigits % 11 != 0) {
     if (v % 11 == 0 && lastTwoDigits % 11 == 0) {
       return true;
@@ -18,5 +13,5 @@ function checkRepeatedNumbers(v) {
   }
 }
 
-let value = Number(prompt());
+var value = Number(prompt());
 console.log(checkRepeatedNumbers(value));
