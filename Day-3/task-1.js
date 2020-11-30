@@ -3,7 +3,10 @@
 // Task 1
 
 function checkRepeatedNumbers(v) {
-  let lastTwoDigits = +String(v).slice(String(v).length - 2, String(v).length);
+  const lastTwoDigits = +String(v).slice(
+    String(v).length - 2,
+    String(v).length
+  );
   if (lastTwoDigits % 11 != 0) {
     if (v % 11 == 0 && lastTwoDigits % 11 == 0) {
       return true;
@@ -14,5 +17,6 @@ function checkRepeatedNumbers(v) {
     return true;
   }
 }
-var value = Number(prompt());
+
+let value = Number(prompt());
 console.log(checkRepeatedNumbers(value));
